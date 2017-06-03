@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Слайдер</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class = "slideshow-container">
+		<div class = "Slides fade">
+			<img src="img/01.jpg" style = "width: 100%" alt = "Evening beach" class = "Img">
+			<div class = "text">Evening beach</div>
+		</div>
+		<div class = "Slides fade">
+			<img src="img/02.png" style = "width: 100%" alt = "Morning road" class = "Img">
+			<div class = "text">Morning road</div>
+		</div>
+		<div class = "Slides fade">
+			<img src="img/03.jpg" style = "width: 100%" alt = "Ship at sunset" class = "Img">
+			<div class = "text">Ship at sunset</div>
+		</div>
+		<div class = "Slides fade">
+			<img src="img/04.jpg" style = "width: 100%" alt = "Cartoon "Up"" class = "Img">
+			<div class = "text">Cartoon "Up"</div>
+		</div>
+		<a class = "prev" onclick = "plusSlide(-1)">&#10094</a>
+		<a class = "next" onclick = "plusSlide(1)">&#10095</a>
+		<br>
+		<div style="text-align: center;">
+			<span class = "dot" onclick = "currentSlide(1)"></span>
+			<span class = "dot" onclick = "currentSlide(2)"></span>
+			<span class = "dot" onclick = "currentSlide(3)"></span>
+			<span class = "dot" onclick = "currentSlide(4)"></span>
+		</div>
+	</div>
+
+	<div class = "myModal">
+		<div class = "modal-content">
+			<img src="" id = "modalImg">
+			<span id = "close">&times;</span>
+			<div id = "modalText">Modal</div>
+		</div>
+	</div>
+	<script type="text/javascript" src = "scr.js"></script>
+</body>
+</html>
